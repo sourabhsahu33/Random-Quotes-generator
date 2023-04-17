@@ -1,0 +1,144 @@
+/* Set background gradient */
+body {
+    background: rgb(179, 61, 12);
+    background: linear-gradient(319deg, rgba(179, 61, 12, 1) 0%, rgba(121, 9, 33, 1) 35%, rgba(28, 164, 192, 0.15599833683473385) 100%);
+  }
+  
+  /* Center container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Set inner box styles */
+  .inner {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Set box styles */
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Set text styles */
+  .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Set quotes styles */
+  .quotes {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    margin-bottom: 10px;
+  }
+  
+  /* Set author styles */
+  .author {
+    font-size: 1.5rem;
+    color: #555555;
+  }
+  
+  /* Set number styles */
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Set tweet button styles */
+  #tweetMe {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #tweetMe:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Set new quote button styles */
+  #newQ {
+    background-color: #1d1717;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #newQ:hover {
+    background-color: #515b15;
+  }
+  
+  /* Set quote icon styles */
+  .start-quote {
+    font-size: 2rem;
+    color: #ef7063;
+    margin-right: 474px;
+  }
+  
+  /* Set footer styles */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Center container */
+    .container {
+      display: block;
+      min-height: 100vh;
+    }
+    
+    /* Set inner box styles */
+    .inner {
+      padding: 30px;
+      border-radius: 10px;
+    }
+    
+    /* Set quotes styles */
+    .quotes {
+      font-size: 2rem;
+    }
+    
+    /* Set author styles */
+    .author {
+      font-size: 1rem;
+    }
+    
+    /* Set number styles */
+    .number {
+      margin-bottom: 10px;
+    }
+    
+    /* Set footer styles */
+    footer {
+      position: static;
+    }
+  }
+  
